@@ -294,7 +294,7 @@ SEC_PER_ACCOUNT_EVENT = 1.2e-7      # exp_finiteN.py: 52.9 s for 4.53e8 accounts
 SEC_PER_ACCOUNT_AVAL = 1.5e-7       # exp_avalanche.py: ~12 s for 8e7 accounts
 SEC_PER_ACCOUNT_STEP = 1.1e-9       # exp_path.py ramp/memory: 33.8 s / 3.39e10, 97.9 s / 9.0e10 account-steps
 SEC_PER_BM_NORMAL = 1.05e-8         # bm_parabola.py: 4.3 s for 4e8 normals
-OVERHEAD = {"mean_field": 1.5, "finite_cohort": 1.5, "avalanches": 1.5, "path": 3.0, "brownian_parabola": 0.5,
+OVERHEAD = {"mean_field": 1.5, "finite_cohort": 1.5, "avalanches": 1.5, "path": 2.0, "brownian_parabola": 0.5,
             "dominant_holder": 1.0}
 
 

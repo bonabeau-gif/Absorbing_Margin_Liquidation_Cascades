@@ -1,0 +1,20 @@
+# Sweep (about 8 s): impact memory. Largest 200-step event versus impact half-life,
+# mean execution delay 5, Lambda = 0.5, ramp to 0.45 over 4600 steps. Same seed and
+# settings as `python exp_path.py memory` (delay 5 rows of results/path_memory.csv).
+# Run with: amlc sweep examples/sweep_half_life.toml --out runs/sweep_half_life
+schema = 1
+model = "path"
+seed = 31337
+
+[parameters]
+cohort.size = 8000
+cohort.count = 32
+execution.delay_mean = 5.0
+impact.strength = 0.5
+ramp.start = 0.02
+ramp.end = 0.45
+ramp.steps = 4600
+ramp.hold_steps = 500
+
+[sweep]
+impact.half_life = [4.0, 20.0, 80.0, -1.0]

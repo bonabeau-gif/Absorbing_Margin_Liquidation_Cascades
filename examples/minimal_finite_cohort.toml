@@ -1,0 +1,11 @@
+# Minimal example (about 2 s): finite cohorts with lognormal exposures.
+# Same seed and the first two cohort-size blocks of exp_finiteN.py, so by_size.csv
+# reproduces the first two rows of results/finiteN_lognormal.csv.
+schema = 1
+model = "finite_cohort"
+seed = 20260917
+
+[parameters]
+exposure.kind = "lognormal"
+cohort.sizes = [250, 1000]
+cohort.counts = [4000, 4000]
