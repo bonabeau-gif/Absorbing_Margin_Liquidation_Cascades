@@ -1,0 +1,10 @@
+# Deterministic mean-field analysis (under 1 s): Fig. 1 parameter set
+# (l = 2, s = 0.16, m = 0.25, chi = 0.30, Lambda = 0.30, square-root impact).
+schema = 1
+model = "mean_field"
+seed = 0
+
+[parameters]
+exposure.tilt = 0.30
+impact.strength = 0.30
+impact.law = "square-root"

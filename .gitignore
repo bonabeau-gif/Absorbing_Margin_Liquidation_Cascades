@@ -2,3 +2,8 @@ __pycache__/
 *.pyc
 .DS_Store
 .ipynb_checkpoints/
+*.egg-info/
+build/
+logs/
+runs/
+.venv/

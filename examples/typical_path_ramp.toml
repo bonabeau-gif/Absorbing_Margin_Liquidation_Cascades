@@ -1,0 +1,16 @@
+# Typical example (a few seconds): path-resolved partial deleveraging, half-life-80
+# transient impact, 32 cohorts of 8000 accounts, ramp of 4000 steps from d0 = 0.02 to 0.30.
+# Same seed and settings as the T = 4000 point of `python exp_path.py ramp`.
+schema = 1
+model = "path"
+seed = 777
+
+[parameters]
+cohort.size = 8000
+cohort.count = 32
+impact.strength = 0.5
+impact.half_life = 80.0
+ramp.start = 0.02
+ramp.end = 0.30
+ramp.steps = 4000
+ramp.hold_steps = 500

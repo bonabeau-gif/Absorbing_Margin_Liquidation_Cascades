@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "amlc"
+version = "0.1.0"
+description = "Absorbing margin-liquidation cascades: model library and agent-facing command line"
+readme = "README.md"
+requires-python = ">=3.11"
+# Exact tested versions are pinned in requirements.txt / environment.yml; install those first.
+dependencies = ["numpy", "scipy", "pandas", "matplotlib", "numba"]
+
+[project.scripts]
+amlc = "amlc.cli:main"
+
+[tool.setuptools]
+packages = ["amlc"]
+
+[tool.setuptools.package-data]
+amlc = ["*.json"]

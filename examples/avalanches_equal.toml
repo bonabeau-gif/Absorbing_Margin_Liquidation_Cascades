@@ -1,0 +1,13 @@
+# Non-default model (about 3 s): precursor avalanche sizes for equal exposures, compared
+# with the Borel-mixture prediction. Same seed (20260922 + N) and settings as the
+# N = 125000 point of avalanche_size_sweep.py.
+schema = 1
+model = "avalanches"
+seed = 20385922
+
+[parameters]
+exposure.kind = "equal"
+cohort.size = 125000
+cohort.count = 60
+histogram.log10_max = 3.6
+histogram.points = 24

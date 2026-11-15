@@ -1,0 +1,13 @@
+# Non-default exposure model (about 20 s): Pareto exposures with tail index 1.5,
+# independent of leverage. Same seed (int(1000*mu)+17 = 1517) and first three blocks
+# as `python exp_pareto.py 1.5`, so by_size.csv reproduces the first three mu = 1.5
+# rows of results/finiteN_pareto.csv.
+schema = 1
+model = "finite_cohort"
+seed = 1517
+
+[parameters]
+exposure.kind = "pareto"
+exposure.tail_index = 1.5
+cohort.sizes = [1000, 4000, 16000]
+cohort.counts = [20000, 10000, 5000]
