@@ -11,6 +11,9 @@ requires-python = ">=3.11"
 # Exact tested versions are pinned in requirements.txt / environment.yml; install those first.
 dependencies = ["numpy", "scipy", "pandas", "matplotlib", "numba"]
 
+[project.scripts]
+amlc = "amlc.cli:main"
+
 [tool.setuptools]
 packages = ["amlc"]
 
