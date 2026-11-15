@@ -1,5 +1,7 @@
 # Reproducibility package: Absorbing margin-liquidation cascades
 
+AI agents and command-line users: see [AGENTS.md](AGENTS.md) for the `amlc` interface (describe, validate, run, query).
+
 This repository contains the code, fixed random seeds, numerical outputs, validation checks, and figure-generation scripts for the study of finite-size effects, heavy-tailed exposures, precursor avalanches, and transient impact in absorbing margin-liquidation cascades.
 
 The package is self-contained and contains computational materials only.
